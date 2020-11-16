@@ -13,7 +13,7 @@ class BookedTable extends React.Component {
 }
 
 BookedTable.propTypes = {
-  match: PropTypes.node,
+  match: PropTypes.any,
   id: PropTypes.string,
 };
 

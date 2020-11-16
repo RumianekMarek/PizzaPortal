@@ -1,109 +1,63 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import Select from '@material-ui/core/Select';
 
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    margin: theme.spacing(2),
-    minWidth: 120,
-  },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-}));
-
-const OrderForm = () => {
-  let styles = useStyles();
-  console.log(styles);
-
-  return(
-    <Container componnet='main' maxWidth='md'  >
-      <h1>OrderForm</h1>
-      <Container>
-        <FormControl variant="outlined" className={styles.formControl}>
-          <InputLabel id="tableSelect">Select Table</InputLabel>
-          <Select
-            id="tableSelector"
-          //value={1}
-          //onChange={console.log(this)}
-          >
-            <MenuItem value=""></MenuItem>
-            <MenuItem value={1}>Table 1</MenuItem>
-            <MenuItem value={2}>Table 2</MenuItem>
-            <MenuItem value={3}>Table 3</MenuItem>
-          </Select>
-        </FormControl>
+class Tables extends React.Component {
+  render(){
+    const classes = makeStyles((theme) => ({
+      root: {
+        flexGrow: 1,
+      },
+      paper: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        color: theme.palette.text.secondary,
+      },
+      avatar: {
+        margin: 0 ,
+      },
+    }));
+    
+    return (
+      <Container component='main' maxWidth="xs">
+        <h1>Tables</h1>
+        <div className={classes.root}>
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 1</h3>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 2</h3><br/>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 3</h3><br/>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+          </Grid>
+          <Grid container spacing={2}>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 4</h3><br/>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 5</h3><br/>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+            <Grid item xs={4}>
+              <Paper className={classes.paper}><h3>Table 6</h3><br/>Order:</Paper>
+              <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
+            </Grid>
+          </Grid>
+        </div>  
       </Container>
+    );
+  }
+}
 
-      <Container>
-        <FormControl variant="outlined" className={styles.formControl}>
-          <InputLabel id="Appetizer">Appetizer</InputLabel>
-          <Select
-            id="tableSelector"
-          //value={1}
-          //onChange={console.log(this)}
-          >
-            <MenuItem value="">
-            </MenuItem>
-            <MenuItem value='chips'>Chips</MenuItem>
-            <MenuItem value='crachers'>Crackers</MenuItem>
-            <MenuItem value='cStrips'>Chicken Strips</MenuItem>
-          </Select>
-        </FormControl>
-        <FormControl variant="outlined" className={styles.formControl}>
-          <InputLabel id="AppetizerBeverage">Beverage</InputLabel>
-          <Select
-            id="tableSelector"
-          //value={1}
-          //onChange={console.log(this)}
-          >
-            <MenuItem value="">
-            </MenuItem>
-            <MenuItem value='Cola'>CocaCola</MenuItem>
-            <MenuItem value='water'>Water</MenuItem>
-            <MenuItem value='beer'>Beer</MenuItem>
-          </Select>
-        </FormControl>
-      </Container>  
-      <Container>
-        <FormControl variant="outlined" className={styles.formControl}>
-          <InputLabel id="Main">Main Dish</InputLabel>
-          <Select
-            id="tableSelector"
-          //value={1}
-          //onChange={console.log(this)}
-          >
-            <MenuItem value="">
-            </MenuItem>
-            <MenuItem value='salad'>Salad</MenuItem>
-            <MenuItem value='chicken'>Chicken</MenuItem>
-            <MenuItem value='fish'>Fish</MenuItem>
-          </Select>
-        </FormControl>
-        <FormControl variant="outlined" className={styles.formControl}>
-          <InputLabel id="MainBeverage">Beverage</InputLabel>
-          <Select
-            id="tableSelector"
-          //value={1}
-          //onChange={console.log(this)}
-          >
-            <MenuItem value="">
-            </MenuItem>
-            <MenuItem value='Cola'>CocaCola</MenuItem>
-            <MenuItem value='water'>Water</MenuItem>
-            <MenuItem value='beer'>Beer</MenuItem>
-          </Select>
-        </FormControl>
-      </Container>
-      <Button id='OrderFormSave' variant='contained' color='primary'>Send Order</Button>
-    </Container>
-  );
-};
-
-
-export default OrderForm;
+export default Tables;

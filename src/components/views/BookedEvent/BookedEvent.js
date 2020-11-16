@@ -44,7 +44,7 @@ class BookedEvent extends React.Component {
 }
 
 BookedEvent.propTypes = {
-  match: PropTypes.node,
+  match: PropTypes.any,
   id: PropTypes.string,
 };
 
