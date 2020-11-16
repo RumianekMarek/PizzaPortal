@@ -3,7 +3,6 @@ import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 
 class Tables extends React.Component {
@@ -32,25 +31,25 @@ class Tables extends React.Component {
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
             <Grid item xs={4}>
-              <Paper className={classes.paper}><h3>Table 2</h3><br/>Order:</Paper>
+              <Paper className={classes.paper}><h3>Table 2</h3>Order:</Paper>
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
             <Grid item xs={4}>
-              <Paper className={classes.paper}><h3>Table 3</h3><br/>Order:</Paper>
+              <Paper className={classes.paper}><h3>Table 3</h3>Order:</Paper>
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
           </Grid>
           <Grid container spacing={2}>
             <Grid item xs={4}>
-              <Paper className={classes.paper}><h3>Table 4</h3><br/>Order:</Paper>
+              <Paper className={classes.paper}><h3>Table 4</h3>Order:</Paper>
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
             <Grid item xs={4}>
-              <Paper className={classes.paper}><h3>Table 5</h3><br/>Order:</Paper>
+              <Paper className={classes.paper}><h3>Table 5</h3>Order:</Paper>
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
             <Grid item xs={4}>
-              <Paper className={classes.paper}><h3>Table 6</h3><br/>Order:</Paper>
+              <Paper className={classes.paper}><h3>Table 6</h3>Order:</Paper>
               <Button variant='contained' color='primary' href='/ordering/new' >Create Order</Button>
             </Grid>
           </Grid>

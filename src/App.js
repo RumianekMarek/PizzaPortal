@@ -10,7 +10,7 @@ import Tables from './components/views/Tables/Tables';
 import BookedTable from './components/views/BookedTable/BookedTable';
 import BookedEvent from './components/views/BookedEvent/BookedEvent';
 import OrderForm from './components/views/OrderForm/OrderForm';
-import CreateOrder from './components/views/CreateOrder/CreateOrder';
+import CreateOrder from './components/views/CreateOrder/CraeteOrderContainer';
 import TableOrder from './components/views/TableOrder/TableOrder';
 import Kitchen from './components/views/Kitchen/Kitchen';
 

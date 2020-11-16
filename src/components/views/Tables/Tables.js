@@ -1,22 +1,33 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles';
+//import { makeStyles } from '@material-ui/core/styles';
+import meStyles from '../../../styles/useStyles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Avatar from '@material-ui/core/Avatar';
 
+// export const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 1,
+//   },
+//   paper: {
+//     padding: theme.spacing(2),
+//     textAlign: 'center',
+//     color: theme.palette.text.secondary,
+
+//   },
+// }));
+
 class Tables extends React.Component {
+
+  meSty(){
+    return meStyles;
+  }
+
   render(){
-    const classes = makeStyles((theme) => ({
-      root: {
-        flexGrow: 1,
-      },
-      paper: {
-        padding: theme.spacing(2),
-        textAlign: 'center',
-        color: theme.palette.text.secondary,
-      },
-    }));
+    console.log(this.meSty());
+    const classes = 'styles';
+    console.log(this);
     
     return (
       <Container component='main' maxWidth="xs">

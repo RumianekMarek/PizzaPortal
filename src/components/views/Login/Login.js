@@ -50,6 +50,7 @@ const Copyright = () => {
 
 const Login = () => {
   const classes = useStyles();
+  console.log(classes.paper);
   return (
     <Container component="main" maxWidth="xs">
       <CssBaseline />
