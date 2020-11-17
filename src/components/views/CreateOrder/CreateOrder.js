@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Container from '@material-ui/core/Container';
 
 class NewOrder extends React.Component {
   static propTypes = {
@@ -20,11 +21,12 @@ class NewOrder extends React.Component {
     const { loading: { active, error }, products } = this.props;
 
     const Wrapper = props => (
-      <div>
-        <h2>NewOrder view</h2>
+      <Container maxWidth='xs'>
+        <h2>Create Order</h2>
         {props.children}
-      </div>
+      </Container>
     );
+    console.log(products);
 
     if(active || !products.length){
       return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import {NavLink, Link} from 'react-router-dom';
-import styles from './Header.scss';
+import styles from './Header.module.scss';
 import { Grid, Row, Col } from 'react-flexbox-grid';
 
 class Header extends React.Component {
